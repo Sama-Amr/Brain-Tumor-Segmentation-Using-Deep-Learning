@@ -24,20 +24,20 @@ Edema (ED): This channel masks the edema, twelling, or tfluid accumulation aroun
 Enhancing Tumor (ET): This masks out the enhancing tumor, which is the tumor region that shows uptake of contrast material and is often considered the most aggressive part of the tumor.
 
 The BraTS20 Training Metadata file contains 57195 data points and eight variables: 
-      - Slice_path
-      - Target
-      - Volume
-      - Slice
-      - Label0_pxl_cnt
-      - Label1_pxl_cnt
-      - Label2_pxl_cnt
-      - Background_ratio
+      + Slice_path
+      + Target
+      + Volume
+      + Slice
+      + Label0_pxl_cnt
+      + Label1_pxl_cnt
+      + Label2_pxl_cnt
+      + Background_ratio
       
   The slice_path reflects the name and file path of the image inside the dataset. The target shows 0 or 1 depending on whether or not the brain is tumorous. 158 patients are labeled with tumors, while 211 are labeled non-tumorous. 
 The volume refers to the 3D MRI volume (or the patient scan) from which the 2D slice was extracted. Each volume contains multiple 2D slices, and the volume provides context for which patient or scan the slice belongs to. The slice indicates the slice number within the 3D volume. For instance, if a volume contains 100 slices, this could be slice number 45 out of 100, indicating its position in the series. Label0_pxl_cnt is a number of pixels in the slice that correspond to areas of interest of abnormal tissue, and the same for the rest of the labels. 
-      - Label0_pxl: Not Tumor (NT) volume
-      - Label1_pxl: Edema (ED)
-      - Label2_pxl: Enhancing Tumor (ET) 
+      + Label0_pxl: Not Tumor (NT) volume
+      + Label1_pxl: Edema (ED)
+      + Label2_pxl: Enhancing Tumor (ET) 
       
   The background ratio is the ratio of pixels in the slice that belong to the background or areas that are not part of the tumor (such as normal brain tissue or other non-tumor regions). 
 
